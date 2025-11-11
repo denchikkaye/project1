@@ -1,1 +1,45 @@
-/* место для вашего кода */
+body {
+    background: rgba(255, 255, 255, 1);
+}
+
+header {
+    display: inline-flex;
+    margin-left: 24px;
+    margin-top: 92px;
+    align-items: center;
+}
+
+.header_menu{
+    margin-left: 27px;
+    margin-right: 36px;
+}
+
+.header_links-list {
+    display: inline-flex;
+    list-style-position: inside;
+    list-style: circle;
+    gap: 30px;
+}
+
+.header_links-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.header_links-item-no_bullit {
+    list-style: none;
+}
+
+.header_logo{
+    display: inline-flex;
+    width: 148px;
+    height: 105px;
+}
+
+.address{
+    display: inline-flexbox;
+    margin-left: 184px;
+}
+
+.header__address{
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
