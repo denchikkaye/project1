@@ -3,15 +3,16 @@ body {
 }
 
 header {
-    display: inline-flex;
-    margin-left: 24px;
-    margin-top: 92px;
+    display: flex;
+    justify-content: space-between; /* Равномерно распределяем пространство */
     align-items: center;
+    margin: 92px 50px 96px; /* Универсальный margin */
+    padding: 0 20px; /* Добавляем padding */
 }
 
 .header_menu{
-    margin-left: 27px;
-    margin-right: 36px;
+    flex: 0 0 auto; 
+    margin: 0; 
 }
 
 .header_links-list {
@@ -30,16 +31,312 @@ header {
 }
 
 .header_logo{
-    display: inline-flex;
+    flex: 0 0 auto;
     width: 148px;
     height: 105px;
+    margin: 0 20px
 }
 
 .address{
-    display: inline-flexbox;
+    flex: 0 0 auto;
     margin-left: 184px;
 }
 
 .header__address{
     border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.jambotron{
+    display: flex;
+    background-image: url("../images/cover.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 757px;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.jambotron_title{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    z-index: 2;
+    color: rgba(255, 255, 255, 1);
+    font-size: 100px;
+    line-height: 115%;
+    font-weight: 700;
+    letter-spacing: 20px;
+    word-spacing: -13px;
+
+}
+
+.jambotron_title-word{
+    white-space: nowrap;
+}
+
+.jambotron_title-word:nth-child(1) {
+    margin-left: 50px; 
+    margin-top: 165px;
+    align-items: left;
+}
+
+.jambotron_title-word:nth-child(2) {
+    margin-left: 336px; 
+    
+}
+
+.jambotron_title-word:nth-child(3) {
+    margin-left: 633px; 
+    align-items: right;
+    margin-right: 50px;
+}
+
+.jambotron_subtitle{
+    position: absolute;
+    color: white;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: uppercase;
+    word-spacing: 13px;
+    letter-spacing: 1px;
+    z-index: 2;
+    margin-top: 667px;
+    margin-left: 78px;
+    margin-bottom: 62px;
+}
+
+.jambotron_subtitle-button{
+    position: absolute;
+    color: white;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: uppercase;
+    z-index: 2;
+    margin-top: 655px;
+    margin-left: 794px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: Transparent;
+    cursor:pointer;
+    padding: 10px;
+    padding-inline: 30px;
+}
+
+.lots{
+    margin-top: 179px;
+}
+.lots_heading {
+    color: rgba(0, 0, 0, 1);
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+
+
+.lots_card-list{
+    display: flex;
+    gap: 25px;
+    padding: 0 40px;
+}
+
+.lots_card-list-items{
+    position: relative;
+    flex: 1;
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+}
+.card_title{
+    position: relative;
+    z-index: 2;
+    color:white;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line:underline;
+    text-transform: uppercase;
+    margin-top: 51px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    
+}
+
+.card_text{
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 48px;
+    text-align: left;
+    margin-top: auto; 
+
+}
+
+.lots_card-list-items:nth-child(1){
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.lots_card-list-items:nth-child(2){
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.lots_card-list-items:nth-child(3){
+    background-image: url(../images/card-lot-03.jpg);
+}
+
+.lots__look-more-link{
+    position: absolute;
+    text-decoration: underline;
+    z-index: 2;
+    color: rgba(0, 0, 0, 1);
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 64px;
+    margin-right: 40px;
+}
+
+.about{
+    display: flex;
+    margin-top: 146px; 
+    gap: 25px;
+    margin-left: 40px;
+    margin-right: 40px; 
+
+}
+
+.about_column-left{
+    flex: 0 0 334px; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    margin-top: 35px;
+}
+
+.about_column-right {
+    flex: 1;
+    margin-right:24px;
+}
+
+.about_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    background: black;
+    border-radius: 120px;
+    margin-left: 0px;
+}
+
+.about_logo-image{
+    justify-content: center;
+    align-items: ce;
+    width: 148px;
+    height: 114px;
+}
+
+.about_title{
+    color: rgba(0, 0, 0, 1);
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 136px 0 100px 0;
+}
+
+.about_text-paragraph {
+    margin: 0 5px 25px 0;
+    color: rgba(0, 0, 0, 1);
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.about_text-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+.footer{
+    display: flex;
+    margin-top: 180px;
+    margin-left: 50px;
+    width: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom:88px;
+}
+
+.footer_address{
+    display: inline-flexbox;
+}
+
+.footer_menu{
+    left: 50%;
+    text-align: center;
+}
+
+.footer_menu-none_underline{
+    text-decoration: none;
+}
+
+.footer li{
+    list-style: none;   
+}
+
+.footer_social-list ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_social-list-items{
+    display: block;
+    width: 48px;
+    height: 48px;
 }
