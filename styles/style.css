@@ -3,11 +3,15 @@
   margin: auto;
 }
 
+.text_spacing{
+  padding-left: 25px;
+}
+
 .heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 92px 50px 96px 24px;
+  padding: 92px 24px 96px 24px;
 }
 
 .no_underline {
@@ -27,7 +31,8 @@
   display: flex;
   list-style-position: inside;
   list-style: circle;
-  gap: 27px;
+  gap: 33px;
+  padding-top: 5px;
   padding-left: 27px;
   font-size: 18px;
   font-weight: 400;
@@ -44,7 +49,7 @@
   display: flex;
   width: 148px;
   height: 105px;
-  margin: 0 184px 0 36px;
+  margin: 0 184px 0 30px;
 }
 
 .address {
@@ -53,7 +58,7 @@
   line-height: 24.3px;
   letter-spacing: 0%;
   text-align: left;
-  margin-right: 20px;
+  margin-right: 62px;
 }
 
 .jambotron {
@@ -89,7 +94,7 @@
   font-size: 100px;
   line-height: 115%;
   font-weight: 700;
-  letter-spacing: 39px;
+  letter-spacing: 32px;
 }
 
 /* .jambotron_title-items:nth-child(1) {
@@ -102,13 +107,15 @@
   align-content: center;
   margin-left: -50px; */
   padding-left: 286px;
+  padding-top: 10px;
 }
 
 .jambotron_title-items:nth-child(3) {
   /* justify-items: flex-end;
   align-content: flex-end;
   margin-left: -90px; */
-  padding-left: 583px;
+  padding-left: 585px;
+  padding-top: 5px;
 }
 
 .jambotron_bottom {
@@ -144,7 +151,8 @@
 }
 
 .lots {
-  margin-top: 149px;
+  margin-top: 179px;
+  margin-left: 24px;
 }
 
 .lots_heading {
@@ -162,7 +170,7 @@
 .lots_card-list {
   display: flex;
   gap: 25px;
-  padding: 27px 24px 0 24px;
+  padding: 27px 24px 0 0;
 }
 
 .lots_card-list-items {
@@ -227,7 +235,8 @@
 
 .about {
   display: flex;
-  margin: 146px 24px 0 24px;
+  margin-top: 146px;
+  padding-left:24px;
 }
 
 .about_column-left {
@@ -284,11 +293,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 180px 50px 88px 50px;
+  margin: 167px 50px 88px 50px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer_address{
+  padding-top: 18px;
 }
 
 .footer_menu {
   text-align: center;
+  padding-left: 35px;
 }
 
 .footer li {
@@ -298,6 +314,7 @@
 .footer_social-list ul {
   display: flex;
   gap: 48px;
+  padding-bottom: 15px;
 }
 
 .footer_social-list-items {
