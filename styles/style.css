@@ -3,7 +3,7 @@
   margin: auto;
 }
 
-.text_spacing{
+.text_spacing {
   padding-left: 25px;
 }
 
@@ -150,6 +150,10 @@
   padding-inline: 30px;
 }
 
+.jambotron_subtitle-button:active {
+  transform: scale(0.95);
+}
+
 .lots {
   margin-top: 179px;
   margin-left: 24px;
@@ -236,7 +240,7 @@
 .about {
   display: flex;
   margin-top: 146px;
-  padding-left:24px;
+  padding-left: 24px;
 }
 
 .about_column-left {
@@ -298,7 +302,7 @@
   font-weight: 400;
 }
 
-.footer_address{
+.footer_address {
   padding-top: 18px;
 }
 
